@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // ✅ Import your routes
-const vehiclEntryRoute = require('./routes/vehiclEntry');   // for vehicle entries
+const vehiclEntryRoute = require('./routes/vehiclEntry'); // for vehicle entries
+const userRoute = require('./routes/userAuth'); // for saving user login credentials
 
 const app = express();
 
@@ -20,7 +21,8 @@ mongoose.connect('mongodb://localhost:27017/vehicleDB', {
 .catch(err => console.log(err));
 
 // ✅ Use API routes
-app.use('/api', vehiclEntryRoute); // /api/entry, /api/records, etc.
+app.use('/api', vehiclEntryRoute);       // /api/entry, /api/records, etc.
+app.use('/api/user', userRoute);         // /api/user/register
 
 // ✅ Default route
 app.get('/', (req, res) => {
