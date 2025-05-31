@@ -1,0 +1,44 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.home-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.home-box h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-links button {
+  margin: 10px; /* Adds spacing between buttons */
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #ff7e5f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home-links button:hover {
+  background-color: #eb5e3e;
+}
+
+

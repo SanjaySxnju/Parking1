@@ -1,0 +1,60 @@
+.exit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.exit-card {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.exit-card h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.exit-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.exit-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.exit-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.exit-card button:hover {
+  background-color: #2980b9;
+}
+
+.back-btn {
+  margin-top: 1rem;
+  background-color: #e67e22;
+}
+
+.back-btn:hover {
+  background-color: #d35400;
+}
